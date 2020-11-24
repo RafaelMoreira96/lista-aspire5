@@ -27,11 +27,10 @@ $i = 0;
     @endif
 
 
-    <table id="lista" class="table table-borderless table-hover table-primary text-center">
+    <table id="lista" class="display table table-borderless table-hover table-success text-center">
         <!-- Cabeçalho da tabela -->
         <thead>
             <tr>
-                <th scope="col"> Nº </th>
                 <th scope="col"> Nome </th>
                 <th scope="col"> FPS </th>
                 <th scope="col"> Preset </th>
@@ -43,7 +42,9 @@ $i = 0;
         <tbody>
             @foreach ($games as $game)
                 <tr>
-                    <td scope="row">{{ ++$i }}</td>
+                    @php
+                        ++$i;
+                    @endphp
                     <td>{{ $game->nome }}</td>
                     <td>{{ $game->fps }}</td>
                     <td>{{ $game->preset }}</td>
@@ -77,5 +78,6 @@ $i = 0;
             @endforeach
         </tbody>
     </table>
+
 
 @endsection
