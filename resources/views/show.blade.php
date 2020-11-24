@@ -45,7 +45,7 @@
                 </div>
             </div>
 
-            <a href="{{ route('games.index') }}" class="btn btn-primary"> Voltar para a lista </a>
+            <a href="/" class="btn btn-primary"> Voltar para a lista </a>
         </div>
         <div class="card-footer text-muted">
             Adicionado em: {{ $game->created_at }}

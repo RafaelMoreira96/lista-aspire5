@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('index', 'GameController@index');
+//Route::get('index', 'GameController@index');
 
 Route::get('konami', function () {
     $games = Game::all(); // Esta linha está puxando todos os dados da tabela 'Game'
@@ -24,3 +24,8 @@ Route::get('konami', function () {
 });
 
 Route::resource('games', GameController::class);
+
+Route::get('/', function () {
+    $games = Game::all(); // Esta linha está puxando todos os dados da tabela 'Game'
+    return view('index', compact('games'));
+});

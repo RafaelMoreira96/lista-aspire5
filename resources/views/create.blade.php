@@ -8,7 +8,7 @@
             cada campo. </p>
         <hr>
         <div class="pull-right" style="padding-top: 10px;">
-            <a class="btn btn-primary" href="{{ route('games.index') }}"> Voltar para a lista </a>
+            <a class="btn btn-primary" href="/"> Voltar para a lista </a>
         </div>
     </div>
 
