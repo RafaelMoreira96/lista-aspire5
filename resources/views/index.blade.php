@@ -27,7 +27,7 @@ $i = 0;
     @endif
 
 
-    <table id="lista" class="display table table-borderless table-hover table-success text-center">
+    <table id="lista" class="display table table-hover table-success text-center">
         <!-- Cabeçalho da tabela -->
         <thead>
             <tr>
