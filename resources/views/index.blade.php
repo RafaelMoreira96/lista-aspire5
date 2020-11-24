@@ -1,7 +1,7 @@
 @extends('layout')
 
 @php
-$i = 1;
+$i = 0;
 @endphp
 
 @section('content')
