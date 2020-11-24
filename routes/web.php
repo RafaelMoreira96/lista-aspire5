@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\GameController;
+use App\Models\Game;
 use Illuminate\Support\Facades\Route;
 
 
@@ -16,5 +17,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('index', 'GameController@index');
+
+Route::get('konami', function () {
+    $games = Game::all(); // Esta linha está puxando todos os dados da tabela 'Game'
+    return view('godmode', compact('games')); //aqui vai retornar a view index
+});
 
 Route::resource('games', GameController::class);
