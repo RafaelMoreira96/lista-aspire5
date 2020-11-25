@@ -89,6 +89,6 @@
             </div>
         </div>
 
-        <div class="text-center"><button type="submit" class="btn btn-primary "> Salvar jogo </button></div>
+        <div class="text-center"><button type="submit" class="btn btn-primary "name="ip" value={{$_SERVER["REMOTE_ADDR"]}}> Salvar jogo </button></div>
     </form>
 @endsection
