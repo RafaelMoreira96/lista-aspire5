@@ -44,7 +44,7 @@ class GameController extends Controller
             'resolucao' => 'required',
             'versao_driver' => 'required',
             'observacao' => 'nullable',
-            'dado_cadastrado_por' => 'nullable'
+            'dado_cadastrado_por' => 'nullable',
         ]);
 
         // Operação para salvar
@@ -93,7 +93,8 @@ class GameController extends Controller
             'resolucao' => 'required',
             'versao_driver' => 'required',
             'observacao' => 'nullable',
-            'dado_cadastrado_por' => 'nullable'
+            'dado_cadastrado_por' => 'nullable',
+            'ip' => 'nullable'
         ]);
 
         // Operação para atualizar
@@ -114,5 +115,4 @@ class GameController extends Controller
         $game->delete();
         return redirect()->route('games.index')->with('success', 'Jogo removido com sucesso!');
     }
-
 }

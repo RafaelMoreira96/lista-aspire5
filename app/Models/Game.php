@@ -16,6 +16,7 @@ class Game extends Model
         'resolucao',
         'versao_driver',
         'observacao',
-        'dado_cadastrado_por'
+        'dado_cadastrado_por',
+        'ip'
     ];
 }
