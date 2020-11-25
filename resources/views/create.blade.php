@@ -75,6 +75,13 @@
 
         <div class="form-row">
             <div class="form-group col-md-12">
+                <label for="img"> Link da imagem do jogo: </label>
+                <input type="text" class="form-control" name="img" placeholder="Lembrando que o link deve ser de um arquivo com formato pra imagem. Ex.: jpg, jpeg, png, bmp">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-12">
                 <label for="observacao"> Observação: </label>
                 <textarea class="form-control" name="observacao" cols="30" rows="5"></textarea>
             </div>

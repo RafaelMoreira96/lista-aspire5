@@ -1,13 +1,18 @@
 @extends('layout')
 
 @section('content')
-    <div class="card text-center">
-        <div class="card-header">
-            <strong> Ficha completa </strong>
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Jogo: {{ $game->nome }}</h5>
+    <div class="card mb-3">
 
+        @if ($game->img == null)
+            <img src="/img/sem_imagem.png" class="card-img-top" alt="..."
+                style="height: 300px; object-fit: cover; object-position: center;">
+        @else
+            <img src={{ $game->img }} class="card-img-top" alt="..."
+                style="height: 300px; object-fit: cover; object-position: center;">
+        @endif
+
+        <div class="card-body">
+            <h3 class="card-title text-center"> {{ $game->nome }}</h3>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Média de FPS:</strong>
@@ -44,13 +49,14 @@
                     {{ $game->dado_cadastrado_por }}
                 </div>
             </div>
-
-            <a href="/" class="btn btn-primary"> Voltar para a lista </a>
         </div>
-        <div class="card-footer text-muted">
+
+        <div class="card-footer text-muted text-center">
             Adicionado em: {{ $game->created_at }}
             <br>
             Modificado em: {{ $game->updated_at }}
         </div>
+        <a href="/" class="btn btn-primary"> Voltar para a lista </a>
     </div>
-@endsection
+
+    @endsection

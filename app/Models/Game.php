@@ -17,6 +17,7 @@ class Game extends Model
         'versao_driver',
         'observacao',
         'dado_cadastrado_por',
-        'ip'
+        'ip',
+        'img'
     ];
 }

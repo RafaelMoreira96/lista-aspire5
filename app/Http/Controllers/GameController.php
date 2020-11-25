@@ -45,6 +45,7 @@ class GameController extends Controller
             'versao_driver' => 'required',
             'observacao' => 'nullable',
             'dado_cadastrado_por' => 'nullable',
+            'img' => 'nullable'
         ]);
 
         // Operação para salvar
@@ -94,7 +95,7 @@ class GameController extends Controller
             'versao_driver' => 'required',
             'observacao' => 'nullable',
             'dado_cadastrado_por' => 'nullable',
-            'ip' => 'nullable'
+            'img' => 'nullable'
         ]);
 
         // Operação para atualizar
