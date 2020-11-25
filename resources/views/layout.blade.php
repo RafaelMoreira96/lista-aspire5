@@ -43,7 +43,7 @@
     <script>
         $(document).ready(function() {
             $('#lista').DataTable({
-                "order": [[ 0, "asc" ]],
+                "order": [[ 1, "asc" ]],
                 "paging": true,
                 "ordering": true,
                 "info": true
