@@ -4,10 +4,10 @@
     <div class="card mb-3">
 
         @if ($game->img == null)
-            <img src="/img/sem_imagem.png" class="card-img-top" alt="..."
+            <img src="/img/sem_imagem.png" class="card-img-top shadow-lg" alt="..."
                 style="height: 300px; object-fit: cover; object-position: center;">
         @else
-            <img src={{ $game->img }} class="card-img-top" alt="..."
+            <img src={{ $game->img }} class="card-img-top shadow-lg" alt="..."
                 style="height: 300px; object-fit: cover; object-position: center;">
         @endif
 
