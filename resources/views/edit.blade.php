@@ -78,7 +78,7 @@
         <div class="form-row">
             <div class="form-group col-md-12">
                 <label for="img"> Link da imagem do jogo: </label>
-                <input type="text" class="form-control" name="img" placeholder="Lembrando que o link deve ser de um arquivo com formato pra imagem. Ex.: jpg, jpeg, png, bmp">
+            <input type="text" class="form-control" name="img"  value="{{ $game->img }}"  placeholder="Lembrando que o link deve ser de um arquivo com formato pra imagem. Ex.: jpg, jpeg, png, bmp">
             </div>
         </div>
 
