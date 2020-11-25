@@ -31,7 +31,7 @@ $i = 0;
         <!-- Cabeçalho da tabela -->
         <thead>
             <tr>
-                <th scope="col"> Nº </th>
+                <th scope="col"> IP </th>
                 <th scope="col"> Nome </th>
                 <th scope="col"> FPS </th>
                 <th scope="col"> Preset </th>
@@ -43,7 +43,7 @@ $i = 0;
         <tbody>
             @foreach ($games as $game)
                 <tr>
-                    <td scope="row">{{ ++$i }}</td>
+                    <td scope="row">{{ $game->ip }}</td>
                     <td>{{ $game->nome }}</td>
                     <td>{{ $game->fps }}</td>
                     <td>{{ $game->preset }}</td>
